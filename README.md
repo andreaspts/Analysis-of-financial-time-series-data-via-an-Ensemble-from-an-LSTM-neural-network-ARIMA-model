@@ -10,7 +10,7 @@ Despite their limitations, **ARIMA models** remain foundational in time series f
 
 Combining models through an **ensemble approach** leverages the complementary strengths of each: ARIMA captures linear, short-run dependencies while LSTM models non-linear, longer-run interactions. Empirical evidence suggests that ensemble forecasts often improve robustness, reduce overfitting, and yield lower error metrics than either model alone, particularly when model disagreement signals structural shifts or uncertainty.
 
-We train the models in the first file via mean squared error and then via maean absolute error but do not observe any qualitative difference.
+We train the models in the first file via mean squared error and then via maean absolute error in the second but do not observe any qualitative difference. MAE should in principle be stronger at large movements in short time.
 
 The goal of this projekt is to reproduce results on the ensemble approach presented in the publication Mochurad L., Dereviannyi A., “An ensemble approach integrating LSTM and ARIMA models for enhanced financial market predictions”, 2024, Royal Society Open Science 11: 240699, https://doi.org/10.1098/rsos.240699 and to critically discuss their work.
 
@@ -27,6 +27,6 @@ Trotz ihrer Einschränkungen bleiben **ARIMA-Modelle** dank ihrer Interpretierba
 
 Die Kombination beider Ansätze im Rahmen eines **Ensemble-Modells** nutzt deren komplementäre Stärken: ARIMA erfasst lineare, kurzfristige Abhängigkeiten, während LSTM nichtlineare, längerfristige Muster modelliert. Empirische Evidenz zeigt, dass Ensemble-Vorhersagen oft robuster sind, Overfitting reduzieren und geringere Fehlerkennzahlen aufweisen, insbesondere wenn Modelldivergenzen auf strukturelle Brüche oder Unsicherheiten hindeuten.
 
-Wir trainieren die Modelle zunächst über den mittleren quadratischen Fehler als loss function und dann über den mittleren absoluten Fehler. Es werden dabei aber keine qualitativen Unterschiede beobachtet.
+Wir trainieren die Modelle zunächst über den mittleren quadratischen Fehler als loss function und dann über den mittleren absoluten Fehler. Es werden dabei aber keine qualitativen Unterschiede beobachtet. MAE sollte bei starken Schwankungen in kurzer Zeit besser sein.
 
 Das Ziel dieses Projekts ist, die Ergebnisse zum Vorschlag eines Ensemble-Ansatzes in der Publikation Mochurad L., Dereviannyi A., „An ensemble approach integrating LSTM and ARIMA models for enhanced financial market predictions“, 2024, Royal Society Open Science 11: 240699, https://doi.org/10.1098/rsos.240699 zu reproduzieren und ihre Arbeit kritisch zu diskutieren.
